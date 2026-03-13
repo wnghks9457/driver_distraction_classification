@@ -21,3 +21,6 @@ datasets/
 
 # 5. 주피터 노트북 체크포인트
 .ipynb_checkpoints/
+
+# 6. 로그 파일
+Results_4Class_ND_CD_ED_MD_260311/training_result_log.txt
