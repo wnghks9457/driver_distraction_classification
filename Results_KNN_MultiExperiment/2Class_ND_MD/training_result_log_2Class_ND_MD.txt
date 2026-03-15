@@ -1,0 +1,67 @@
+Experiment Start: 2Class_ND_MD
+Model           : KNN
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes         : ['ND', 'MD']
+Target Map      : {0: 0, 3: 1}
+Modes           : ['AU+Pose+Vehicle+Gaze']
+KNN Params      : {'n_neighbors': 9, 'weights': 'uniform', 'metric': 'minkowski', 'p': 2, 'n_jobs': -1}
+================================================================================
+Filtered File Distribution: {'ND': 60, 'MD': 31}
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 8046 | Val Windows: 2295
+Train Distribution (raw): {'ND': 6551, 'MD': 1495}
+Val Distribution (raw): {'ND': 1857, 'MD': 438}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 1495, 'MD': 1495}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 438, 'MD': 438}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.6792, BAcc: 0.6792, Prec: 0.7283, Rec: 0.6792, F1: 0.6610, Spec: 0.6792, AUC: 0.8137
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 8375 | Val Windows: 1966
+Train Distribution (raw): {'ND': 6835, 'MD': 1540}
+Val Distribution (raw): {'ND': 1573, 'MD': 393}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 1540, 'MD': 1540}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 393, 'MD': 393}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.8015, BAcc: 0.8015, Prec: 0.8325, Rec: 0.8015, F1: 0.7968, Spec: 0.8015, AUC: 0.8853
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 8265 | Val Windows: 2076
+Train Distribution (raw): {'ND': 6724, 'MD': 1541}
+Val Distribution (raw): {'ND': 1684, 'MD': 392}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 1541, 'MD': 1541}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 392, 'MD': 392}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7449, BAcc: 0.7449, Prec: 0.7984, Rec: 0.7449, F1: 0.7329, Spec: 0.7449, AUC: 0.8823
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 8345 | Val Windows: 1996
+Train Distribution (raw): {'ND': 6784, 'MD': 1561}
+Val Distribution (raw): {'ND': 1624, 'MD': 372}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 1561, 'MD': 1561}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 372, 'MD': 372}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.8266, BAcc: 0.8266, Prec: 0.8474, Rec: 0.8266, F1: 0.8240, Spec: 0.8266, AUC: 0.8980
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 8333 | Val Windows: 2008
+Train Distribution (raw): {'ND': 6738, 'MD': 1595}
+Val Distribution (raw): {'ND': 1670, 'MD': 338}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 1595, 'MD': 1595}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 338, 'MD': 338}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7781, BAcc: 0.7781, Prec: 0.8072, Rec: 0.7781, F1: 0.7727, Spec: 0.7781, AUC: 0.8749
+
+================================================================================
+FINAL KNN SUMMARY [2Class_ND_MD]
+================================================================================
+[AU+Pose+Vehicle+Gaze]
+  ACC : 0.7661 (+/- 0.0511)
+  BACC: 0.7661 (+/- 0.0511)
+  PREC: 0.8028 (+/- 0.0412)
+  REC : 0.7661 (+/- 0.0511)
+  F1  : 0.7575 (+/- 0.0568)
+  SPEC: 0.7661 (+/- 0.0511)
+  AUC : 0.8708 (+/- 0.0295)

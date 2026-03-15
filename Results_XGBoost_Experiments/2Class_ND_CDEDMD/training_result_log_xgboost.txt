@@ -1,0 +1,6 @@
+Experiment Start: 2Class_ND_CDEDMD
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'CDEDMD']
+Modes: ['AU+Pose+Vehicle+Gaze']
+================================================================================

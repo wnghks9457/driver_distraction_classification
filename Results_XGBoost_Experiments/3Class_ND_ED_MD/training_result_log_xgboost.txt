@@ -1,0 +1,43 @@
+Experiment Start: 3Class_ND_ED_MD
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'ED', 'MD']
+Modes: ['AU+Pose+Vehicle+Gaze']
+================================================================================
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 9427 | Val Windows: 2604
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7251, BAcc: 0.7251, Prec: 0.7803, Rec: 0.7251, F1: 0.7256, Spec: 0.8625, AUC: 0.9117
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9714 | Val Windows: 2317
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7149, BAcc: 0.7149, Prec: 0.7839, Rec: 0.7149, F1: 0.7160, Spec: 0.8574, AUC: 0.9236
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9679 | Val Windows: 2352
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7317, BAcc: 0.7317, Prec: 0.7637, Rec: 0.7317, F1: 0.7253, Spec: 0.8658, AUC: 0.9276
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9636 | Val Windows: 2395
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7294, BAcc: 0.7294, Prec: 0.7850, Rec: 0.7294, F1: 0.7224, Spec: 0.8647, AUC: 0.9305
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9668 | Val Windows: 2363
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7367, BAcc: 0.7367, Prec: 0.7964, Rec: 0.7367, F1: 0.7401, Spec: 0.8683, AUC: 0.9168
+
+================================================================================
+FINAL XGBOOST SUMMARY [3Class_ND_ED_MD]
+================================================================================
+[AU+Pose+Vehicle+Gaze]
+  ACC : 0.7275 (+/- 0.0073)
+  BACC: 0.7275 (+/- 0.0073)
+  PREC: 0.7819 (+/- 0.0106)
+  REC : 0.7275 (+/- 0.0073)
+  F1  : 0.7259 (+/- 0.0079)
+  SPEC: 0.8638 (+/- 0.0037)
+  AUC : 0.9220 (+/- 0.0069)

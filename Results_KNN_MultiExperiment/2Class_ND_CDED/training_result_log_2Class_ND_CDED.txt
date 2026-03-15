@@ -1,0 +1,31 @@
+Experiment Start: 2Class_ND_CDED
+Model           : KNN
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes         : ['ND', 'CDED']
+Target Map      : {0: 0, 1: 1, 2: 1}
+Modes           : ['AU+Pose+Vehicle+Gaze']
+KNN Params      : {'n_neighbors': 9, 'weights': 'uniform', 'metric': 'minkowski', 'p': 2, 'n_jobs': -1}
+================================================================================
+Filtered File Distribution: {'ND': 31, 'CDED': 60}
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 9586 | Val Windows: 2620
+Train Distribution (raw): {'ND': 6551, 'CDED': 3035}
+Val Distribution (raw): {'ND': 1857, 'CDED': 763}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 3035, 'CDED': 3035}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 763, 'CDED': 763}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7562, BAcc: 0.7562, Prec: 0.7677, Rec: 0.7562, F1: 0.7536, Spec: 0.7562, AUC: 0.8424
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9861 | Val Windows: 2345
+Train Distribution (raw): {'ND': 6835, 'CDED': 3026}
+Val Distribution (raw): {'ND': 1573, 'CDED': 772}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 3026, 'CDED': 3026}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 772, 'CDED': 772}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.8083, BAcc: 0.8083, Prec: 0.8133, Rec: 0.8083, F1: 0.8075, Spec: 0.8083, AUC: 0.8922
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
