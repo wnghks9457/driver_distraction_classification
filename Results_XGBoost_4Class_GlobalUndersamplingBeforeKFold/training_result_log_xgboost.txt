@@ -1,0 +1,308 @@
+Experiment Start: XGBoost Multi-Class Classification
+Split Method    : StratifiedKFold
+Train Balancing : global undersampling BEFORE KFold
+Val Evaluation  : balanced validation only
+Classes: ['ND', 'CD', 'ED', 'MD']
+Modes: ['AU', 'Pose', 'Vehicle', 'Gaze', 'AU+Pose', 'AU+Vehicle', 'AU+Gaze', 'Pose+Vehicle', 'Pose+Gaze', 'Vehicle+Gaze', 'AU+Pose+Vehicle+Gaze']
+================================================================================
+Total samples before balancing: 14139
+Class Distribution before balancing: {'ND': 8408, 'CD': 2108, 'ED': 1690, 'MD': 1933}
+[AU] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[AU] Samples: 14139 -> 6760
+[Pose] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[Pose] Samples: 14139 -> 6760
+[Vehicle] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[Vehicle] Samples: 14139 -> 6760
+[Gaze] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[Gaze] Samples: 14139 -> 6760
+[AU+Pose] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[AU+Pose] Samples: 14139 -> 6760
+[AU+Vehicle] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[AU+Vehicle] Samples: 14139 -> 6760
+[AU+Gaze] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[AU+Gaze] Samples: 14139 -> 6760
+[Pose+Vehicle] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[Pose+Vehicle] Samples: 14139 -> 6760
+[Pose+Gaze] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[Pose+Gaze] Samples: 14139 -> 6760
+[Vehicle+Gaze] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[Vehicle+Gaze] Samples: 14139 -> 6760
+[AU+Pose+Vehicle+Gaze] Global balanced class distribution: {'ND': 1690, 'CD': 1690, 'ED': 1690, 'MD': 1690}
+[AU+Pose+Vehicle+Gaze] Samples: 14139 -> 6760
+
+--- Fold 1/5 ---
+Train Distribution: {'ND': 1352, 'CD': 1352, 'ED': 1352, 'MD': 1352}
+Val Distribution  : {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Val Samples: 1352 -> 1352
+   [AU] Acc: 0.9416, BAcc: 0.9416, Prec: 0.9410, Rec: 0.9416, F1: 0.9410, Spec: 0.9805, AUC: 0.9902
+   [Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose] Val Samples: 1352 -> 1352
+   [Pose] Acc: 0.8114, BAcc: 0.8114, Prec: 0.8106, Rec: 0.8114, F1: 0.8108, Spec: 0.9371, AUC: 0.9544
+   [Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle] Val Samples: 1352 -> 1352
+   [Vehicle] Acc: 0.5518, BAcc: 0.5518, Prec: 0.5500, Rec: 0.5518, F1: 0.5472, Spec: 0.8506, AUC: 0.8013
+   [Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Gaze] Val Samples: 1352 -> 1352
+   [Gaze] Acc: 0.8025, BAcc: 0.8025, Prec: 0.8012, Rec: 0.8025, F1: 0.7992, Spec: 0.9342, AUC: 0.9480
+   [AU+Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose] Val Samples: 1352 -> 1352
+   [AU+Pose] Acc: 0.9445, BAcc: 0.9445, Prec: 0.9440, Rec: 0.9445, F1: 0.9439, Spec: 0.9815, AUC: 0.9912
+   [AU+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Vehicle] Val Samples: 1352 -> 1352
+   [AU+Vehicle] Acc: 0.9423, BAcc: 0.9423, Prec: 0.9417, Rec: 0.9423, F1: 0.9416, Spec: 0.9808, AUC: 0.9914
+   [AU+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Gaze] Val Samples: 1352 -> 1352
+   [AU+Gaze] Acc: 0.9430, BAcc: 0.9430, Prec: 0.9425, Rec: 0.9430, F1: 0.9425, Spec: 0.9810, AUC: 0.9907
+   [Pose+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Vehicle] Val Samples: 1352 -> 1352
+   [Pose+Vehicle] Acc: 0.8291, BAcc: 0.8291, Prec: 0.8294, Rec: 0.8291, F1: 0.8285, Spec: 0.9430, AUC: 0.9609
+   [Pose+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Gaze] Val Samples: 1352 -> 1352
+   [Pose+Gaze] Acc: 0.8846, BAcc: 0.8846, Prec: 0.8844, Rec: 0.8846, F1: 0.8840, Spec: 0.9615, AUC: 0.9759
+   [Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [Vehicle+Gaze] Acc: 0.8240, BAcc: 0.8240, Prec: 0.8228, Rec: 0.8240, F1: 0.8216, Spec: 0.9413, AUC: 0.9551
+   [AU+Pose+Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose+Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [AU+Pose+Vehicle+Gaze] Acc: 0.9423, BAcc: 0.9423, Prec: 0.9419, Rec: 0.9423, F1: 0.9420, Spec: 0.9808, AUC: 0.9921
+
+--- Fold 2/5 ---
+Train Distribution: {'ND': 1352, 'CD': 1352, 'ED': 1352, 'MD': 1352}
+Val Distribution  : {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Val Samples: 1352 -> 1352
+   [AU] Acc: 0.9430, BAcc: 0.9430, Prec: 0.9426, Rec: 0.9430, F1: 0.9427, Spec: 0.9810, AUC: 0.9902
+   [Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose] Val Samples: 1352 -> 1352
+   [Pose] Acc: 0.8099, BAcc: 0.8099, Prec: 0.8111, Rec: 0.8099, F1: 0.8102, Spec: 0.9366, AUC: 0.9538
+   [Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle] Val Samples: 1352 -> 1352
+   [Vehicle] Acc: 0.5754, BAcc: 0.5754, Prec: 0.5720, Rec: 0.5754, F1: 0.5704, Spec: 0.8585, AUC: 0.8221
+   [Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Gaze] Val Samples: 1352 -> 1352
+   [Gaze] Acc: 0.8070, BAcc: 0.8070, Prec: 0.8063, Rec: 0.8070, F1: 0.8060, Spec: 0.9357, AUC: 0.9498
+   [AU+Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose] Val Samples: 1352 -> 1352
+   [AU+Pose] Acc: 0.9467, BAcc: 0.9467, Prec: 0.9466, Rec: 0.9467, F1: 0.9466, Spec: 0.9822, AUC: 0.9920
+   [AU+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Vehicle] Val Samples: 1352 -> 1352
+   [AU+Vehicle] Acc: 0.9467, BAcc: 0.9467, Prec: 0.9468, Rec: 0.9467, F1: 0.9467, Spec: 0.9822, AUC: 0.9915
+   [AU+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Gaze] Val Samples: 1352 -> 1352
+   [AU+Gaze] Acc: 0.9408, BAcc: 0.9408, Prec: 0.9410, Rec: 0.9408, F1: 0.9409, Spec: 0.9803, AUC: 0.9908
+   [Pose+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Vehicle] Val Samples: 1352 -> 1352
+   [Pose+Vehicle] Acc: 0.8476, BAcc: 0.8476, Prec: 0.8490, Rec: 0.8476, F1: 0.8476, Spec: 0.9492, AUC: 0.9657
+   [Pose+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Gaze] Val Samples: 1352 -> 1352
+   [Pose+Gaze] Acc: 0.8772, BAcc: 0.8772, Prec: 0.8771, Rec: 0.8772, F1: 0.8765, Spec: 0.9591, AUC: 0.9766
+   [Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [Vehicle+Gaze] Acc: 0.8284, BAcc: 0.8284, Prec: 0.8275, Rec: 0.8284, F1: 0.8259, Spec: 0.9428, AUC: 0.9596
+   [AU+Pose+Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose+Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [AU+Pose+Vehicle+Gaze] Acc: 0.9534, BAcc: 0.9534, Prec: 0.9534, Rec: 0.9534, F1: 0.9534, Spec: 0.9845, AUC: 0.9931
+
+--- Fold 3/5 ---
+Train Distribution: {'ND': 1352, 'CD': 1352, 'ED': 1352, 'MD': 1352}
+Val Distribution  : {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Val Samples: 1352 -> 1352
+   [AU] Acc: 0.9475, BAcc: 0.9475, Prec: 0.9474, Rec: 0.9475, F1: 0.9473, Spec: 0.9825, AUC: 0.9923
+   [Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose] Val Samples: 1352 -> 1352
+   [Pose] Acc: 0.8010, BAcc: 0.8010, Prec: 0.8025, Rec: 0.8010, F1: 0.8010, Spec: 0.9337, AUC: 0.9527
+   [Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle] Val Samples: 1352 -> 1352
+   [Vehicle] Acc: 0.5814, BAcc: 0.5814, Prec: 0.5832, Rec: 0.5814, F1: 0.5788, Spec: 0.8605, AUC: 0.8184
+   [Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Gaze] Val Samples: 1352 -> 1352
+   [Gaze] Acc: 0.8092, BAcc: 0.8092, Prec: 0.8078, Rec: 0.8092, F1: 0.8078, Spec: 0.9364, AUC: 0.9540
+   [AU+Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose] Val Samples: 1352 -> 1352
+   [AU+Pose] Acc: 0.9519, BAcc: 0.9519, Prec: 0.9518, Rec: 0.9519, F1: 0.9517, Spec: 0.9840, AUC: 0.9929
+   [AU+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Vehicle] Val Samples: 1352 -> 1352
+   [AU+Vehicle] Acc: 0.9519, BAcc: 0.9519, Prec: 0.9518, Rec: 0.9519, F1: 0.9517, Spec: 0.9840, AUC: 0.9925
+   [AU+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Gaze] Val Samples: 1352 -> 1352
+   [AU+Gaze] Acc: 0.9482, BAcc: 0.9482, Prec: 0.9480, Rec: 0.9482, F1: 0.9479, Spec: 0.9827, AUC: 0.9918
+   [Pose+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Vehicle] Val Samples: 1352 -> 1352
+   [Pose+Vehicle] Acc: 0.8269, BAcc: 0.8269, Prec: 0.8282, Rec: 0.8269, F1: 0.8267, Spec: 0.9423, AUC: 0.9613
+   [Pose+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Gaze] Val Samples: 1352 -> 1352
+   [Pose+Gaze] Acc: 0.8802, BAcc: 0.8802, Prec: 0.8800, Rec: 0.8802, F1: 0.8797, Spec: 0.9601, AUC: 0.9765
+   [Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [Vehicle+Gaze] Acc: 0.8536, BAcc: 0.8536, Prec: 0.8539, Rec: 0.8536, F1: 0.8507, Spec: 0.9512, AUC: 0.9648
+   [AU+Pose+Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose+Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [AU+Pose+Vehicle+Gaze] Acc: 0.9556, BAcc: 0.9556, Prec: 0.9556, Rec: 0.9556, F1: 0.9555, Spec: 0.9852, AUC: 0.9928
+
+--- Fold 4/5 ---
+Train Distribution: {'ND': 1352, 'CD': 1352, 'ED': 1352, 'MD': 1352}
+Val Distribution  : {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Val Samples: 1352 -> 1352
+   [AU] Acc: 0.9297, BAcc: 0.9297, Prec: 0.9291, Rec: 0.9297, F1: 0.9285, Spec: 0.9766, AUC: 0.9878
+   [Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose] Val Samples: 1352 -> 1352
+   [Pose] Acc: 0.7833, BAcc: 0.7833, Prec: 0.7824, Rec: 0.7833, F1: 0.7825, Spec: 0.9278, AUC: 0.9426
+   [Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle] Val Samples: 1352 -> 1352
+   [Vehicle] Acc: 0.5710, BAcc: 0.5710, Prec: 0.5728, Rec: 0.5710, F1: 0.5706, Spec: 0.8570, AUC: 0.8165
+   [Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Gaze] Val Samples: 1352 -> 1352
+   [Gaze] Acc: 0.8173, BAcc: 0.8173, Prec: 0.8160, Rec: 0.8173, F1: 0.8145, Spec: 0.9391, AUC: 0.9490
+   [AU+Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose] Val Samples: 1352 -> 1352
+   [AU+Pose] Acc: 0.9371, BAcc: 0.9371, Prec: 0.9365, Rec: 0.9371, F1: 0.9363, Spec: 0.9790, AUC: 0.9888
+   [AU+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Vehicle] Val Samples: 1352 -> 1352
+   [AU+Vehicle] Acc: 0.9342, BAcc: 0.9342, Prec: 0.9334, Rec: 0.9342, F1: 0.9334, Spec: 0.9781, AUC: 0.9891
+   [AU+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Gaze] Val Samples: 1352 -> 1352
+   [AU+Gaze] Acc: 0.9320, BAcc: 0.9320, Prec: 0.9313, Rec: 0.9320, F1: 0.9311, Spec: 0.9773, AUC: 0.9890
+   [Pose+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Vehicle] Val Samples: 1352 -> 1352
+   [Pose+Vehicle] Acc: 0.8203, BAcc: 0.8203, Prec: 0.8207, Rec: 0.8203, F1: 0.8196, Spec: 0.9401, AUC: 0.9562
+   [Pose+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Gaze] Val Samples: 1352 -> 1352
+   [Pose+Gaze] Acc: 0.8765, BAcc: 0.8765, Prec: 0.8766, Rec: 0.8765, F1: 0.8749, Spec: 0.9588, AUC: 0.9721
+   [Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [Vehicle+Gaze] Acc: 0.8469, BAcc: 0.8469, Prec: 0.8460, Rec: 0.8469, F1: 0.8441, Spec: 0.9490, AUC: 0.9627
+   [AU+Pose+Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose+Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [AU+Pose+Vehicle+Gaze] Acc: 0.9416, BAcc: 0.9416, Prec: 0.9410, Rec: 0.9416, F1: 0.9410, Spec: 0.9805, AUC: 0.9903
+
+--- Fold 5/5 ---
+Train Distribution: {'ND': 1352, 'CD': 1352, 'ED': 1352, 'MD': 1352}
+Val Distribution  : {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU] Val Samples: 1352 -> 1352
+   [AU] Acc: 0.9423, BAcc: 0.9423, Prec: 0.9417, Rec: 0.9423, F1: 0.9417, Spec: 0.9808, AUC: 0.9912
+   [Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose] Val Samples: 1352 -> 1352
+   [Pose] Acc: 0.7959, BAcc: 0.7959, Prec: 0.7989, Rec: 0.7959, F1: 0.7956, Spec: 0.9320, AUC: 0.9471
+   [Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle] Val Samples: 1352 -> 1352
+   [Vehicle] Acc: 0.5858, BAcc: 0.5858, Prec: 0.5876, Rec: 0.5858, F1: 0.5825, Spec: 0.8619, AUC: 0.8208
+   [Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Gaze] Val Samples: 1352 -> 1352
+   [Gaze] Acc: 0.8158, BAcc: 0.8158, Prec: 0.8126, Rec: 0.8158, F1: 0.8128, Spec: 0.9386, AUC: 0.9475
+   [AU+Pose] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose] Val Samples: 1352 -> 1352
+   [AU+Pose] Acc: 0.9445, BAcc: 0.9445, Prec: 0.9440, Rec: 0.9445, F1: 0.9439, Spec: 0.9815, AUC: 0.9923
+   [AU+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Vehicle] Val Samples: 1352 -> 1352
+   [AU+Vehicle] Acc: 0.9430, BAcc: 0.9430, Prec: 0.9425, Rec: 0.9430, F1: 0.9426, Spec: 0.9810, AUC: 0.9920
+   [AU+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Gaze] Val Samples: 1352 -> 1352
+   [AU+Gaze] Acc: 0.9408, BAcc: 0.9408, Prec: 0.9402, Rec: 0.9408, F1: 0.9401, Spec: 0.9803, AUC: 0.9923
+   [Pose+Vehicle] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Vehicle] Val Samples: 1352 -> 1352
+   [Pose+Vehicle] Acc: 0.8232, BAcc: 0.8232, Prec: 0.8237, Rec: 0.8232, F1: 0.8227, Spec: 0.9411, AUC: 0.9572
+   [Pose+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Pose+Gaze] Val Samples: 1352 -> 1352
+   [Pose+Gaze] Acc: 0.8609, BAcc: 0.8609, Prec: 0.8599, Rec: 0.8609, F1: 0.8597, Spec: 0.9536, AUC: 0.9734
+   [Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [Vehicle+Gaze] Acc: 0.8328, BAcc: 0.8328, Prec: 0.8313, Rec: 0.8328, F1: 0.8312, Spec: 0.9443, AUC: 0.9626
+   [AU+Pose+Vehicle+Gaze] Balanced Val Distribution: {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose+Vehicle+Gaze] Val Samples: 1352 -> 1352
+   [AU+Pose+Vehicle+Gaze] Acc: 0.9475, BAcc: 0.9475, Prec: 0.9470, Rec: 0.9475, F1: 0.9468, Spec: 0.9825, AUC: 0.9935
+
+================================================================================
+FINAL XGBOOST SUMMARY [GLOBAL UNDERSAMPLING BEFORE KFOLD]
+================================================================================
+[AU]
+  ACC : 0.9408 (+/- 0.0059)
+  BACC: 0.9408 (+/- 0.0059)
+  PREC: 0.9403 (+/- 0.0061)
+  REC : 0.9408 (+/- 0.0059)
+  F1  : 0.9402 (+/- 0.0063)
+  SPEC: 0.9803 (+/- 0.0020)
+  AUC : 0.9904 (+/- 0.0015)
+[Pose]
+  ACC : 0.8003 (+/- 0.0102)
+  BACC: 0.8003 (+/- 0.0102)
+  PREC: 0.8011 (+/- 0.0104)
+  REC : 0.8003 (+/- 0.0102)
+  F1  : 0.8000 (+/- 0.0105)
+  SPEC: 0.9334 (+/- 0.0034)
+  AUC : 0.9501 (+/- 0.0045)
+[Vehicle]
+  ACC : 0.5731 (+/- 0.0118)
+  BACC: 0.5731 (+/- 0.0118)
+  PREC: 0.5731 (+/- 0.0130)
+  REC : 0.5731 (+/- 0.0118)
+  F1  : 0.5699 (+/- 0.0123)
+  SPEC: 0.8577 (+/- 0.0039)
+  AUC : 0.8158 (+/- 0.0075)
+[Gaze]
+  ACC : 0.8104 (+/- 0.0055)
+  BACC: 0.8104 (+/- 0.0055)
+  PREC: 0.8088 (+/- 0.0051)
+  REC : 0.8104 (+/- 0.0055)
+  F1  : 0.8081 (+/- 0.0054)
+  SPEC: 0.9368 (+/- 0.0018)
+  AUC : 0.9496 (+/- 0.0023)
+[AU+Pose]
+  ACC : 0.9450 (+/- 0.0048)
+  BACC: 0.9450 (+/- 0.0048)
+  PREC: 0.9446 (+/- 0.0050)
+  REC : 0.9450 (+/- 0.0048)
+  F1  : 0.9445 (+/- 0.0050)
+  SPEC: 0.9817 (+/- 0.0016)
+  AUC : 0.9914 (+/- 0.0014)
+[AU+Vehicle]
+  ACC : 0.9436 (+/- 0.0058)
+  BACC: 0.9436 (+/- 0.0058)
+  PREC: 0.9432 (+/- 0.0061)
+  REC : 0.9436 (+/- 0.0058)
+  F1  : 0.9432 (+/- 0.0061)
+  SPEC: 0.9812 (+/- 0.0019)
+  AUC : 0.9913 (+/- 0.0012)
+[AU+Gaze]
+  ACC : 0.9410 (+/- 0.0053)
+  BACC: 0.9410 (+/- 0.0053)
+  PREC: 0.9406 (+/- 0.0054)
+  REC : 0.9410 (+/- 0.0053)
+  F1  : 0.9405 (+/- 0.0054)
+  SPEC: 0.9803 (+/- 0.0018)
+  AUC : 0.9909 (+/- 0.0011)
+[Pose+Vehicle]
+  ACC : 0.8294 (+/- 0.0096)
+  BACC: 0.8294 (+/- 0.0096)
+  PREC: 0.8302 (+/- 0.0099)
+  REC : 0.8294 (+/- 0.0096)
+  F1  : 0.8290 (+/- 0.0098)
+  SPEC: 0.9431 (+/- 0.0032)
+  AUC : 0.9603 (+/- 0.0034)
+[Pose+Gaze]
+  ACC : 0.8759 (+/- 0.0080)
+  BACC: 0.8759 (+/- 0.0080)
+  PREC: 0.8756 (+/- 0.0083)
+  REC : 0.8759 (+/- 0.0080)
+  F1  : 0.8750 (+/- 0.0083)
+  SPEC: 0.9586 (+/- 0.0027)
+  AUC : 0.9749 (+/- 0.0018)
+[Vehicle+Gaze]
+  ACC : 0.8371 (+/- 0.0113)
+  BACC: 0.8371 (+/- 0.0113)
+  PREC: 0.8363 (+/- 0.0117)
+  REC : 0.8371 (+/- 0.0113)
+  F1  : 0.8347 (+/- 0.0110)
+  SPEC: 0.9457 (+/- 0.0038)
+  AUC : 0.9610 (+/- 0.0034)
+[AU+Pose+Vehicle+Gaze]
+  ACC : 0.9481 (+/- 0.0057)
+  BACC: 0.9481 (+/- 0.0057)
+  PREC: 0.9478 (+/- 0.0059)
+  REC : 0.9481 (+/- 0.0057)
+  F1  : 0.9477 (+/- 0.0059)
+  SPEC: 0.9827 (+/- 0.0019)
+  AUC : 0.9924 (+/- 0.0011)
