@@ -1,0 +1,67 @@
+Experiment Start: 3Class_CD_ED_MD
+Model           : SVM
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes         : ['CD', 'ED', 'MD']
+Target Map      : {1: 0, 2: 1, 3: 2}
+Modes           : ['AU+Pose+Vehicle+Gaze']
+SVM Params      : {'kernel': 'rbf', 'C': 0.1, 'gamma': 0.001, 'probability': True, 'random_state': 42, 'cache_size': 500}
+================================================================================
+Filtered File Distribution: {'CD': 33, 'ED': 27, 'MD': 31}
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 4527 | Val Windows: 1204
+Train Raw Distribution: {'CD': 1656, 'ED': 1376, 'MD': 1495}
+Val Raw Distribution  : {'CD': 452, 'ED': 314, 'MD': 438}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'CD': 1376, 'ED': 1376, 'MD': 1376}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'CD': 314, 'ED': 314, 'MD': 314}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.5998, BAcc: 0.5998, Prec: 0.5877, Rec: 0.5998, F1: 0.5884, Spec: 0.7999, AUC: 0.7618
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 4592 | Val Windows: 1139
+Train Raw Distribution: {'CD': 1673, 'ED': 1379, 'MD': 1540}
+Val Raw Distribution  : {'CD': 435, 'ED': 311, 'MD': 393}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'CD': 1379, 'ED': 1379, 'MD': 1379}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'CD': 311, 'ED': 311, 'MD': 311}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.5638, BAcc: 0.5638, Prec: 0.5382, Rec: 0.5638, F1: 0.5467, Spec: 0.7819, AUC: 0.7680
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 4572 | Val Windows: 1159
+Train Raw Distribution: {'CD': 1659, 'ED': 1372, 'MD': 1541}
+Val Raw Distribution  : {'CD': 449, 'ED': 318, 'MD': 392}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'CD': 1372, 'ED': 1372, 'MD': 1372}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'CD': 318, 'ED': 318, 'MD': 318}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.4748, BAcc: 0.4748, Prec: 0.4638, Rec: 0.4748, F1: 0.4615, Spec: 0.7374, AUC: 0.7106
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 4599 | Val Windows: 1132
+Train Raw Distribution: {'CD': 1721, 'ED': 1317, 'MD': 1561}
+Val Raw Distribution  : {'CD': 387, 'ED': 373, 'MD': 372}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'CD': 1317, 'ED': 1317, 'MD': 1317}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'CD': 372, 'ED': 372, 'MD': 372}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.4427, BAcc: 0.4427, Prec: 0.4600, Rec: 0.4427, F1: 0.4453, Spec: 0.7213, AUC: 0.6712
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 4634 | Val Windows: 1097
+Train Raw Distribution: {'CD': 1723, 'ED': 1316, 'MD': 1595}
+Val Raw Distribution  : {'CD': 385, 'ED': 374, 'MD': 338}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'CD': 1316, 'ED': 1316, 'MD': 1316}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'CD': 338, 'ED': 338, 'MD': 338}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.5552, BAcc: 0.5552, Prec: 0.5461, Rec: 0.5552, F1: 0.5435, Spec: 0.7776, AUC: 0.7657
+
+================================================================================
+FINAL SVM SUMMARY [3Class_CD_ED_MD]
+================================================================================
+[AU+Pose+Vehicle+Gaze]
+  ACC : 0.5273 (+/- 0.0588)
+  BACC: 0.5273 (+/- 0.0588)
+  PREC: 0.5192 (+/- 0.0497)
+  REC : 0.5273 (+/- 0.0588)
+  F1  : 0.5171 (+/- 0.0546)
+  SPEC: 0.7636 (+/- 0.0294)
+  AUC : 0.7354 (+/- 0.0385)

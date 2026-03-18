@@ -29,3 +29,39 @@ Val Distribution (raw): {'ND': 1573, 'CDED': 772}
 
 --- Fold 3/5 ---
 Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9767 | Val Windows: 2439
+Train Distribution (raw): {'ND': 6724, 'CDED': 3043}
+Val Distribution (raw): {'ND': 1684, 'CDED': 755}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 3043, 'CDED': 3043}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 755, 'CDED': 755}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7649, BAcc: 0.7649, Prec: 0.7967, Rec: 0.7649, F1: 0.7584, Spec: 0.7649, AUC: 0.8584
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9823 | Val Windows: 2383
+Train Distribution (raw): {'ND': 6784, 'CDED': 3039}
+Val Distribution (raw): {'ND': 1624, 'CDED': 759}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 3039, 'CDED': 3039}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 759, 'CDED': 759}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7563, BAcc: 0.7563, Prec: 0.7726, Rec: 0.7563, F1: 0.7525, Spec: 0.7563, AUC: 0.8558
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9787 | Val Windows: 2419
+Train Distribution (raw): {'ND': 6738, 'CDED': 3049}
+Val Distribution (raw): {'ND': 1670, 'CDED': 749}
+[AU+Pose+Vehicle+Gaze] Train Distribution (balanced): {'ND': 3049, 'CDED': 3049}
+[AU+Pose+Vehicle+Gaze] Val Distribution (balanced): {'ND': 749, 'CDED': 749}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.7377, BAcc: 0.7377, Prec: 0.7454, Rec: 0.7377, F1: 0.7356, Spec: 0.7377, AUC: 0.8172
+
+================================================================================
+FINAL KNN SUMMARY [2Class_ND_CDED]
+================================================================================
+[AU+Pose+Vehicle+Gaze]
+  ACC : 0.7647 (+/- 0.0236)
+  BACC: 0.7647 (+/- 0.0236)
+  PREC: 0.7791 (+/- 0.0236)
+  REC : 0.7647 (+/- 0.0236)
+  F1  : 0.7615 (+/- 0.0243)
+  SPEC: 0.7647 (+/- 0.0236)
+  AUC : 0.8532 (+/- 0.0244)

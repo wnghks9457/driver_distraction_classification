@@ -1,0 +1,67 @@
+Experiment Start: 2Class_ND_CDED
+Model           : Random Forest
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes         : ['ND', 'CDED']
+Target Map      : {0: 0, 1: 1, 2: 1}
+Modes           : ['AU+Pose+Vehicle+Gaze']
+RF Params       : {'n_estimators': 300, 'random_state': 42, 'n_jobs': -1}
+================================================================================
+Filtered File Distribution: {'ND': 31, 'CDED': 60}
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 9586 | Val Windows: 2620
+Train Raw Distribution: {'ND': 6551, 'CDED': 3035}
+Val Raw Distribution  : {'ND': 1857, 'CDED': 763}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'ND': 3035, 'CDED': 3035}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'ND': 763, 'CDED': 763}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.8657, BAcc: 0.8657, Prec: 0.8709, Rec: 0.8657, F1: 0.8652, Spec: 0.8657, AUC: 0.9386
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9861 | Val Windows: 2345
+Train Raw Distribution: {'ND': 6835, 'CDED': 3026}
+Val Raw Distribution  : {'ND': 1573, 'CDED': 772}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'ND': 3026, 'CDED': 3026}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'ND': 772, 'CDED': 772}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.8562, BAcc: 0.8562, Prec: 0.8584, Rec: 0.8562, F1: 0.8560, Spec: 0.8562, AUC: 0.9220
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9767 | Val Windows: 2439
+Train Raw Distribution: {'ND': 6724, 'CDED': 3043}
+Val Raw Distribution  : {'ND': 1684, 'CDED': 755}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'ND': 3043, 'CDED': 3043}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'ND': 755, 'CDED': 755}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.9106, BAcc: 0.9106, Prec: 0.9111, Rec: 0.9106, F1: 0.9106, Spec: 0.9106, AUC: 0.9607
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9823 | Val Windows: 2383
+Train Raw Distribution: {'ND': 6784, 'CDED': 3039}
+Val Raw Distribution  : {'ND': 1624, 'CDED': 759}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'ND': 3039, 'CDED': 3039}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'ND': 759, 'CDED': 759}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.8821, BAcc: 0.8821, Prec: 0.8830, Rec: 0.8821, F1: 0.8820, Spec: 0.8821, AUC: 0.9362
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9787 | Val Windows: 2419
+Train Raw Distribution: {'ND': 6738, 'CDED': 3049}
+Val Raw Distribution  : {'ND': 1670, 'CDED': 749}
+[AU+Pose+Vehicle+Gaze] Train Balanced Distribution: {'ND': 3049, 'CDED': 3049}
+[AU+Pose+Vehicle+Gaze] Val Balanced Distribution  : {'ND': 749, 'CDED': 749}
+   [AU+Pose+Vehicle+Gaze] Acc: 0.8371, BAcc: 0.8371, Prec: 0.8393, Rec: 0.8371, F1: 0.8369, Spec: 0.8371, AUC: 0.9097
+
+================================================================================
+FINAL RANDOM FOREST SUMMARY [2Class_ND_CDED]
+================================================================================
+[AU+Pose+Vehicle+Gaze]
+  ACC : 0.8703 (+/- 0.0248)
+  BACC: 0.8703 (+/- 0.0248)
+  PREC: 0.8725 (+/- 0.0241)
+  REC : 0.8703 (+/- 0.0248)
+  F1  : 0.8701 (+/- 0.0249)
+  SPEC: 0.8703 (+/- 0.0248)
+  AUC : 0.9334 (+/- 0.0171)

@@ -1033,20 +1033,20 @@ import pingouin as pg
 # [USER CONFIGURATION] 설정 파라미터
 # ==========================================
 class Config:
-    FOLDER_PATH = "Distraction_dataset_Final_Merged"
+    FOLDER_PATH = "Distraction_dataset_Final_Merged_ANOVA"
 
-    SAVE_PATH = "Feature_Statistical_Test_Results_CSV_Unit2.csv"
-    WELCH_ANOVA_SAVE_PATH = "Feature_Welch_ANOVA_Results_CSV_Unit2.csv"
-    GAMES_HOWELL_SAVE_PATH = "Feature_GamesHowell_Posthoc_Results_CSV_Unit2.csv"
+    SAVE_PATH = "Feature_Statistical_Test_Results_CSV_Unit3.csv"
+    WELCH_ANOVA_SAVE_PATH = "Feature_Welch_ANOVA_Results_CSV_Unit3.csv"
+    GAMES_HOWELL_SAVE_PATH = "Feature_GamesHowell_Posthoc_Results_CSV_Unit3.csv"
 
     FPS = 28
 
     # ND vs D boxplot
-    PLOT_DIR = "boxplots2"
+    PLOT_DIR = "boxplots3"
     BEST_DIR = os.path.join(PLOT_DIR, "best")
 
     # Welch ANOVA multiclass boxplot
-    ANOVA_PLOT_DIR = "welch_anova_boxplots2"
+    ANOVA_PLOT_DIR = "welch_anova_boxplots3"
     ANOVA_BEST_DIR = os.path.join(ANOVA_PLOT_DIR, "best")
 
 
