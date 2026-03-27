@@ -1,0 +1,46 @@
+Experiment Start: 3Class_ND_ED_MD
+Ablation: feature_minus_gaze_angle_x
+Selected Groups: ['AU', 'POSE', 'VEHICLE', 'GAZE']
+Removed Groups: []
+Selected Features (38): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz', 'Speed', 'Acceleration', 'Brake', 'Steering', 'LaneOffset', 'gaze_0_x', 'gaze_0_y', 'gaze_0_z', 'gaze_1_x', 'gaze_1_y', 'gaze_1_z', 'gaze_angle_y', 'gaze_vel', 'gaze_amp', 'gaze_acc']
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'ED', 'MD']
+================================================================================
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 9427 | Val Windows: 2604
+   [feature_minus_gaze_angle_x] Acc: 0.7686, BAcc: 0.7686, Prec: 0.7893, Rec: 0.7686, F1: 0.7718, Spec: 0.8843, AUC: 0.9191
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9714 | Val Windows: 2317
+   [feature_minus_gaze_angle_x] Acc: 0.7063, BAcc: 0.7063, Prec: 0.7413, Rec: 0.7063, F1: 0.7002, Spec: 0.8532, AUC: 0.9203
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9679 | Val Windows: 2352
+   [feature_minus_gaze_angle_x] Acc: 0.7925, BAcc: 0.7925, Prec: 0.8244, Rec: 0.7925, F1: 0.7918, Spec: 0.8962, AUC: 0.9500
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9636 | Val Windows: 2395
+   [feature_minus_gaze_angle_x] Acc: 0.7473, BAcc: 0.7473, Prec: 0.7698, Rec: 0.7473, F1: 0.7420, Spec: 0.8737, AUC: 0.9120
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9668 | Val Windows: 2363
+   [feature_minus_gaze_angle_x] Acc: 0.7939, BAcc: 0.7939, Prec: 0.8042, Rec: 0.7939, F1: 0.7962, Spec: 0.8969, AUC: 0.9225
+
+================================================================================
+FINAL XGBOOST SUMMARY [3Class_ND_ED_MD | feature_minus_gaze_angle_x]
+================================================================================
+[feature_minus_gaze_angle_x]
+  ACC : 0.7617 (+/- 0.0326)
+  BACC: 0.7617 (+/- 0.0326)
+  PREC: 0.7858 (+/- 0.0286)
+  REC : 0.7617 (+/- 0.0326)
+  F1  : 0.7604 (+/- 0.0357)
+  SPEC: 0.8809 (+/- 0.0163)
+  AUC : 0.9248 (+/- 0.0131)

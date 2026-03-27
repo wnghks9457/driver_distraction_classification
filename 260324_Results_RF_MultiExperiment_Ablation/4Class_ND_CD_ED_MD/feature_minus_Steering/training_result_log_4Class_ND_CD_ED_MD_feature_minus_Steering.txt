@@ -1,0 +1,69 @@
+Experiment Start: 4Class_ND_CD_ED_MD
+Ablation        : feature_minus_Steering
+Model           : Random Forest
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes         : ['ND', 'CD', 'ED', 'MD']
+Target Map      : {0: 0, 1: 1, 2: 2, 3: 3}
+Selected Groups : ['AU', 'POSE', 'VEHICLE', 'GAZE']
+Selected Features (38): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz', 'Speed', 'Acceleration', 'Brake', 'LaneOffset', 'gaze_0_x', 'gaze_0_y', 'gaze_0_z', 'gaze_1_x', 'gaze_1_y', 'gaze_1_z', 'gaze_angle_x', 'gaze_angle_y', 'gaze_vel', 'gaze_amp', 'gaze_acc']
+RF Params       : {'n_estimators': 300, 'random_state': 42, 'n_jobs': -1}
+================================================================================
+Filtered File Distribution: {'CD': 33, 'ED': 27, 'MD': 31}
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 11083 | Val Windows: 3056
+Train Raw Distribution: {'ND': 6556, 'CD': 1656, 'ED': 1376, 'MD': 1495}
+Val Raw Distribution  : {'ND': 1852, 'CD': 452, 'ED': 314, 'MD': 438}
+Train Balanced Distribution: {'ND': 1376, 'CD': 1376, 'ED': 1376, 'MD': 1376}
+Val Balanced Distribution  : {'ND': 314, 'CD': 314, 'ED': 314, 'MD': 314}
+   [feature_minus_Steering] Acc: 0.5231, BAcc: 0.5231, Prec: 0.5240, Rec: 0.5231, F1: 0.5209, Spec: 0.8410, AUC: 0.7868
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11387 | Val Windows: 2752
+Train Raw Distribution: {'ND': 6795, 'CD': 1673, 'ED': 1379, 'MD': 1540}
+Val Raw Distribution  : {'ND': 1613, 'CD': 435, 'ED': 311, 'MD': 393}
+Train Balanced Distribution: {'ND': 1379, 'CD': 1379, 'ED': 1379, 'MD': 1379}
+Val Balanced Distribution  : {'ND': 311, 'CD': 311, 'ED': 311, 'MD': 311}
+   [feature_minus_Steering] Acc: 0.5402, BAcc: 0.5402, Prec: 0.5010, Rec: 0.5402, F1: 0.5163, Spec: 0.8467, AUC: 0.7970
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11338 | Val Windows: 2801
+Train Raw Distribution: {'ND': 6766, 'CD': 1659, 'ED': 1372, 'MD': 1541}
+Val Raw Distribution  : {'ND': 1642, 'CD': 449, 'ED': 318, 'MD': 392}
+Train Balanced Distribution: {'ND': 1372, 'CD': 1372, 'ED': 1372, 'MD': 1372}
+Val Balanced Distribution  : {'ND': 318, 'CD': 318, 'ED': 318, 'MD': 318}
+   [feature_minus_Steering] Acc: 0.5873, BAcc: 0.5873, Prec: 0.5963, Rec: 0.5873, F1: 0.5903, Spec: 0.8624, AUC: 0.8297
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11357 | Val Windows: 2782
+Train Raw Distribution: {'ND': 6758, 'CD': 1721, 'ED': 1317, 'MD': 1561}
+Val Raw Distribution  : {'ND': 1650, 'CD': 387, 'ED': 373, 'MD': 372}
+Train Balanced Distribution: {'ND': 1317, 'CD': 1317, 'ED': 1317, 'MD': 1317}
+Val Balanced Distribution  : {'ND': 372, 'CD': 372, 'ED': 372, 'MD': 372}
+   [feature_minus_Steering] Acc: 0.5128, BAcc: 0.5128, Prec: 0.4894, Rec: 0.5128, F1: 0.4966, Spec: 0.8376, AUC: 0.7724
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11391 | Val Windows: 2748
+Train Raw Distribution: {'ND': 6757, 'CD': 1723, 'ED': 1316, 'MD': 1595}
+Val Raw Distribution  : {'ND': 1651, 'CD': 385, 'ED': 374, 'MD': 338}
+Train Balanced Distribution: {'ND': 1316, 'CD': 1316, 'ED': 1316, 'MD': 1316}
+Val Balanced Distribution  : {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [feature_minus_Steering] Acc: 0.5133, BAcc: 0.5133, Prec: 0.5279, Rec: 0.5133, F1: 0.5176, Spec: 0.8378, AUC: 0.7842
+
+================================================================================
+FINAL RANDOM FOREST SUMMARY [4Class_ND_CD_ED_MD | feature_minus_Steering]
+================================================================================
+[feature_minus_Steering]
+  ACC : 0.5353 (+/- 0.0278)
+  BACC: 0.5353 (+/- 0.0278)
+  PREC: 0.5277 (+/- 0.0371)
+  REC : 0.5353 (+/- 0.0278)
+  F1  : 0.5283 (+/- 0.0321)
+  SPEC: 0.8451 (+/- 0.0093)
+  AUC : 0.7940 (+/- 0.0195)

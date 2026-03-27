@@ -1,0 +1,46 @@
+Experiment Start: 3Class_ND_CD_MD
+Ablation: group_minus_AU_GAZE
+Selected Groups: ['POSE', 'VEHICLE']
+Removed Groups: ['AU', 'GAZE']
+Selected Features (11): ['pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz', 'Speed', 'Acceleration', 'Brake', 'Steering', 'LaneOffset']
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'CD', 'MD']
+================================================================================
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 9707 | Val Windows: 2742
+   [group_minus_AU_GAZE] Acc: 0.5601, BAcc: 0.5601, Prec: 0.5294, Rec: 0.5601, F1: 0.5149, Spec: 0.7801, AUC: 0.7577
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 10008 | Val Windows: 2441
+   [group_minus_AU_GAZE] Acc: 0.5199, BAcc: 0.5199, Prec: 0.4995, Rec: 0.5199, F1: 0.4875, Spec: 0.7600, AUC: 0.7598
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9966 | Val Windows: 2483
+   [group_minus_AU_GAZE] Acc: 0.6548, BAcc: 0.6548, Prec: 0.6566, Rec: 0.6548, F1: 0.6450, Spec: 0.8274, AUC: 0.8418
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 10040 | Val Windows: 2409
+   [group_minus_AU_GAZE] Acc: 0.5681, BAcc: 0.5681, Prec: 0.6249, Rec: 0.5681, F1: 0.5660, Spec: 0.7841, AUC: 0.7630
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 10075 | Val Windows: 2374
+   [group_minus_AU_GAZE] Acc: 0.6203, BAcc: 0.6203, Prec: 0.6402, Rec: 0.6203, F1: 0.6229, Spec: 0.8102, AUC: 0.8055
+
+================================================================================
+FINAL XGBOOST SUMMARY [3Class_ND_CD_MD | group_minus_AU_GAZE]
+================================================================================
+[group_minus_AU_GAZE]
+  ACC : 0.5846 (+/- 0.0474)
+  BACC: 0.5846 (+/- 0.0474)
+  PREC: 0.5901 (+/- 0.0633)
+  REC : 0.5846 (+/- 0.0474)
+  F1  : 0.5673 (+/- 0.0604)
+  SPEC: 0.7923 (+/- 0.0237)
+  AUC : 0.7856 (+/- 0.0332)

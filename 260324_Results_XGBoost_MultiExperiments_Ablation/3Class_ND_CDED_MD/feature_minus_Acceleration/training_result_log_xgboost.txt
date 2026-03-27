@@ -1,0 +1,45 @@
+Experiment Start: 3Class_ND_CDED_MD
+Ablation: feature_minus_Acceleration
+Selected Groups: ['AU', 'POSE', 'VEHICLE', 'GAZE']
+Selected Features (38): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz', 'Speed', 'Brake', 'Steering', 'LaneOffset', 'gaze_0_x', 'gaze_0_y', 'gaze_0_z', 'gaze_1_x', 'gaze_1_y', 'gaze_1_z', 'gaze_angle_x', 'gaze_angle_y', 'gaze_vel', 'gaze_amp', 'gaze_acc']
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'CDED', 'MD']
+================================================================================
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 11081 | Val Windows: 3058
+   [feature_minus_Acceleration] Acc: 0.8021, BAcc: 0.8021, Prec: 0.8099, Rec: 0.8021, F1: 0.8033, Spec: 0.9011, AUC: 0.9263
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11401 | Val Windows: 2738
+   [feature_minus_Acceleration] Acc: 0.8338, BAcc: 0.8338, Prec: 0.8467, Rec: 0.8338, F1: 0.8362, Spec: 0.9169, AUC: 0.9534
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11308 | Val Windows: 2831
+   [feature_minus_Acceleration] Acc: 0.8963, BAcc: 0.8963, Prec: 0.9007, Rec: 0.8963, F1: 0.8969, Spec: 0.9481, AUC: 0.9712
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11384 | Val Windows: 2755
+   [feature_minus_Acceleration] Acc: 0.8342, BAcc: 0.8342, Prec: 0.8423, Rec: 0.8342, F1: 0.8356, Spec: 0.9171, AUC: 0.9457
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11382 | Val Windows: 2757
+   [feature_minus_Acceleration] Acc: 0.7978, BAcc: 0.7978, Prec: 0.8025, Rec: 0.7978, F1: 0.7985, Spec: 0.8989, AUC: 0.9283
+
+================================================================================
+FINAL XGBOOST SUMMARY [3Class_ND_CDED_MD | feature_minus_Acceleration]
+================================================================================
+[feature_minus_Acceleration]
+  ACC : 0.8328 (+/- 0.0352)
+  BACC: 0.8328 (+/- 0.0352)
+  PREC: 0.8404 (+/- 0.0348)
+  REC : 0.8328 (+/- 0.0352)
+  F1  : 0.8341 (+/- 0.0351)
+  SPEC: 0.9164 (+/- 0.0176)
+  AUC : 0.9450 (+/- 0.0167)

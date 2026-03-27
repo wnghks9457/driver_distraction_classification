@@ -1,0 +1,46 @@
+Experiment Start: 3Class_ND_CD_MD
+Ablation: feature_minus_pose_Rx
+Selected Groups: ['AU', 'POSE', 'VEHICLE', 'GAZE']
+Removed Groups: []
+Selected Features (38): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Ry', 'pose_Rz', 'Speed', 'Acceleration', 'Brake', 'Steering', 'LaneOffset', 'gaze_0_x', 'gaze_0_y', 'gaze_0_z', 'gaze_1_x', 'gaze_1_y', 'gaze_1_z', 'gaze_angle_x', 'gaze_angle_y', 'gaze_vel', 'gaze_amp', 'gaze_acc']
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'CD', 'MD']
+================================================================================
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 9707 | Val Windows: 2742
+   [feature_minus_pose_Rx] Acc: 0.7725, BAcc: 0.7725, Prec: 0.7946, Rec: 0.7725, F1: 0.7744, Spec: 0.8862, AUC: 0.9142
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 10008 | Val Windows: 2441
+   [feature_minus_pose_Rx] Acc: 0.7625, BAcc: 0.7625, Prec: 0.7808, Rec: 0.7625, F1: 0.7576, Spec: 0.8813, AUC: 0.9111
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9966 | Val Windows: 2483
+   [feature_minus_pose_Rx] Acc: 0.8401, BAcc: 0.8401, Prec: 0.8490, Rec: 0.8401, F1: 0.8408, Spec: 0.9201, AUC: 0.9541
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 10040 | Val Windows: 2409
+   [feature_minus_pose_Rx] Acc: 0.7276, BAcc: 0.7276, Prec: 0.7544, Rec: 0.7276, F1: 0.7251, Spec: 0.8638, AUC: 0.9201
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 10075 | Val Windows: 2374
+   [feature_minus_pose_Rx] Acc: 0.8215, BAcc: 0.8215, Prec: 0.8248, Rec: 0.8215, F1: 0.8210, Spec: 0.9107, AUC: 0.9360
+
+================================================================================
+FINAL XGBOOST SUMMARY [3Class_ND_CD_MD | feature_minus_pose_Rx]
+================================================================================
+[feature_minus_pose_Rx]
+  ACC : 0.7848 (+/- 0.0408)
+  BACC: 0.7848 (+/- 0.0408)
+  PREC: 0.8007 (+/- 0.0331)
+  REC : 0.7848 (+/- 0.0408)
+  F1  : 0.7838 (+/- 0.0421)
+  SPEC: 0.8924 (+/- 0.0204)
+  AUC : 0.9271 (+/- 0.0160)

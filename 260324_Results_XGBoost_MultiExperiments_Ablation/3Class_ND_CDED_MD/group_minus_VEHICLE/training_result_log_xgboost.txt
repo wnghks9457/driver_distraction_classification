@@ -1,0 +1,45 @@
+Experiment Start: 3Class_ND_CDED_MD
+Ablation: group_minus_VEHICLE
+Selected Groups: ['AU', 'POSE', 'GAZE']
+Selected Features (34): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz', 'gaze_0_x', 'gaze_0_y', 'gaze_0_z', 'gaze_1_x', 'gaze_1_y', 'gaze_1_z', 'gaze_angle_x', 'gaze_angle_y', 'gaze_vel', 'gaze_amp', 'gaze_acc']
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'CDED', 'MD']
+================================================================================
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 11081 | Val Windows: 3058
+   [group_minus_VEHICLE] Acc: 0.7458, BAcc: 0.7458, Prec: 0.7606, Rec: 0.7458, F1: 0.7456, Spec: 0.8729, AUC: 0.8998
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11401 | Val Windows: 2738
+   [group_minus_VEHICLE] Acc: 0.8304, BAcc: 0.8304, Prec: 0.8405, Rec: 0.8304, F1: 0.8314, Spec: 0.9152, AUC: 0.9470
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11308 | Val Windows: 2831
+   [group_minus_VEHICLE] Acc: 0.8512, BAcc: 0.8512, Prec: 0.8615, Rec: 0.8512, F1: 0.8504, Spec: 0.9256, AUC: 0.9598
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11384 | Val Windows: 2755
+   [group_minus_VEHICLE] Acc: 0.8029, BAcc: 0.8029, Prec: 0.8105, Rec: 0.8029, F1: 0.8040, Spec: 0.9014, AUC: 0.9360
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11382 | Val Windows: 2757
+   [group_minus_VEHICLE] Acc: 0.7712, BAcc: 0.7712, Prec: 0.7743, Rec: 0.7712, F1: 0.7717, Spec: 0.8856, AUC: 0.9206
+
+================================================================================
+FINAL XGBOOST SUMMARY [3Class_ND_CDED_MD | group_minus_VEHICLE]
+================================================================================
+[group_minus_VEHICLE]
+  ACC : 0.8003 (+/- 0.0383)
+  BACC: 0.8003 (+/- 0.0383)
+  PREC: 0.8095 (+/- 0.0382)
+  REC : 0.8003 (+/- 0.0383)
+  F1  : 0.8006 (+/- 0.0382)
+  SPEC: 0.9001 (+/- 0.0191)
+  AUC : 0.9326 (+/- 0.0209)

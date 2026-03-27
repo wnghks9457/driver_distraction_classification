@@ -1,0 +1,46 @@
+Experiment Start: 4Class_ND_CD_ED_MD
+Ablation: group_minus_VEHICLE_GAZE
+Selected Groups: ['AU', 'POSE']
+Removed Groups: ['VEHICLE', 'GAZE']
+Selected Features (23): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz']
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'CD', 'ED', 'MD']
+================================================================================
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 11083 | Val Windows: 3056
+   [group_minus_VEHICLE_GAZE] Acc: 0.5096, BAcc: 0.5096, Prec: 0.5283, Rec: 0.5096, F1: 0.5096, Spec: 0.8365, AUC: 0.7516
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11387 | Val Windows: 2752
+   [group_minus_VEHICLE_GAZE] Acc: 0.4550, BAcc: 0.4550, Prec: 0.4336, Rec: 0.4550, F1: 0.4357, Spec: 0.8183, AUC: 0.7474
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11338 | Val Windows: 2801
+   [group_minus_VEHICLE_GAZE] Acc: 0.5346, BAcc: 0.5346, Prec: 0.5571, Rec: 0.5346, F1: 0.5365, Spec: 0.8449, AUC: 0.7941
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11357 | Val Windows: 2782
+   [group_minus_VEHICLE_GAZE] Acc: 0.4590, BAcc: 0.4590, Prec: 0.4418, Rec: 0.4590, F1: 0.4447, Spec: 0.8197, AUC: 0.7006
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11391 | Val Windows: 2748
+   [group_minus_VEHICLE_GAZE] Acc: 0.5067, BAcc: 0.5067, Prec: 0.5153, Rec: 0.5067, F1: 0.5107, Spec: 0.8356, AUC: 0.7672
+
+================================================================================
+FINAL XGBOOST SUMMARY [4Class_ND_CD_ED_MD | group_minus_VEHICLE_GAZE]
+================================================================================
+[group_minus_VEHICLE_GAZE]
+  ACC : 0.4930 (+/- 0.0310)
+  BACC: 0.4930 (+/- 0.0310)
+  PREC: 0.4952 (+/- 0.0489)
+  REC : 0.4930 (+/- 0.0310)
+  F1  : 0.4874 (+/- 0.0399)
+  SPEC: 0.8310 (+/- 0.0103)
+  AUC : 0.7522 (+/- 0.0306)

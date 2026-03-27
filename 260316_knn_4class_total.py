@@ -30,7 +30,7 @@ from sklearn.neighbors import KNeighborsClassifier
 # =========================================================
 class Config:
     FOLDER_PATH = "Distraction_dataset_Final_Merged"
-    RESULTS_DIR = "Results_KNN_MultiExperiment"
+    RESULTS_DIR = "260323_Results_KNN_MultiExperiment"
 
     SEED = 42
 
@@ -86,26 +86,26 @@ class Config:
         #     'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 2},
         #     'CLASS_NAMES': ['ND', 'CD', 'ED']
         # },
-        # '3Class_ND_ED_MD': {
-        #     'TARGET_LABELS_MAP': {0: 0, 2: 1, 3: 2},
-        #     'CLASS_NAMES': ['ND', 'ED', 'MD']
-        # },
+        '3Class_ND_ED_MD': {
+            'TARGET_LABELS_MAP': {0: 0, 2: 1, 3: 2},
+            'CLASS_NAMES': ['ND', 'ED', 'MD']
+        },
         # '3Class_CD_ED_MD': {
         #     'TARGET_LABELS_MAP': {1: 0, 2: 1, 3: 2},
         #     'CLASS_NAMES': ['CD', 'ED', 'MD']
         # },
-        # '3Class_ND_CDED_MD': {
-        #     'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 1, 3: 2},
-        #     'CLASS_NAMES': ['ND', 'CDED', 'MD']
-        # },
+        '3Class_ND_CDED_MD': {
+            'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 1, 3: 2},
+            'CLASS_NAMES': ['ND', 'CDED', 'MD']
+        },
         '3Class_ND_CD_MD': {
             'TARGET_LABELS_MAP': {0: 0, 1: 1, 3: 2},
             'CLASS_NAMES': ['ND', 'CD', 'MD']
         },
-        # '4Class_ND_CD_ED_MD': {
-        #     'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 2, 3: 3},
-        #     'CLASS_NAMES': ['ND', 'CD', 'ED', 'MD']
-        # }
+        '4Class_ND_CD_ED_MD': {
+            'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 2, 3: 3},
+            'CLASS_NAMES': ['ND', 'CD', 'ED', 'MD']
+        }
     }
 
 
@@ -313,28 +313,39 @@ def create_windows_from_file_list(file_list, target_labels_map):
 # =========================================================
 # FEATURE ENGINEERING
 # =========================================================
+# def summarize_sequence_features(X_seq: np.ndarray) -> np.ndarray:
+#     mean_feat = np.mean(X_seq, axis=1)
+#     std_feat = np.std(X_seq, axis=1)
+#     min_feat = np.min(X_seq, axis=1)
+#     max_feat = np.max(X_seq, axis=1)
+#     median_feat = np.median(X_seq, axis=1)
+
+#     first_feat = X_seq[:, 0, :]
+#     last_feat = X_seq[:, -1, :]
+#     delta_feat = last_feat - first_feat
+
+#     if X_seq.shape[1] > 1:
+#         diff = np.diff(X_seq, axis=1)
+#         diff_mean_feat = np.mean(diff, axis=1)
+#         abs_diff_mean_feat = np.mean(np.abs(diff), axis=1)
+#     else:
+#         diff_mean_feat = np.zeros_like(mean_feat)
+#         abs_diff_mean_feat = np.zeros_like(mean_feat)
+
+#     X_static = np.concatenate([
+#         mean_feat, std_feat, min_feat, max_feat, median_feat,
+#         last_feat, delta_feat, diff_mean_feat, abs_diff_mean_feat
+#     ], axis=1).astype(np.float32)
+
+#     return X_static
+
 def summarize_sequence_features(X_seq: np.ndarray) -> np.ndarray:
     mean_feat = np.mean(X_seq, axis=1)
+    var_feat = np.var(X_seq, axis=1)
     std_feat = np.std(X_seq, axis=1)
-    min_feat = np.min(X_seq, axis=1)
-    max_feat = np.max(X_seq, axis=1)
-    median_feat = np.median(X_seq, axis=1)
-
-    first_feat = X_seq[:, 0, :]
-    last_feat = X_seq[:, -1, :]
-    delta_feat = last_feat - first_feat
-
-    if X_seq.shape[1] > 1:
-        diff = np.diff(X_seq, axis=1)
-        diff_mean_feat = np.mean(diff, axis=1)
-        abs_diff_mean_feat = np.mean(np.abs(diff), axis=1)
-    else:
-        diff_mean_feat = np.zeros_like(mean_feat)
-        abs_diff_mean_feat = np.zeros_like(mean_feat)
 
     X_static = np.concatenate([
-        mean_feat, std_feat, min_feat, max_feat, median_feat,
-        last_feat, delta_feat, diff_mean_feat, abs_diff_mean_feat
+        mean_feat, var_feat, std_feat
     ], axis=1).astype(np.float32)
 
     return X_static

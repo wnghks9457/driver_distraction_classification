@@ -1,0 +1,45 @@
+Experiment Start: 3Class_ND_ED_MD
+Ablation: feature_minus_gaze_1_x
+Selected Groups: ['AU', 'POSE', 'VEHICLE', 'GAZE']
+Selected Features (38): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz', 'Speed', 'Acceleration', 'Brake', 'Steering', 'LaneOffset', 'gaze_0_x', 'gaze_0_y', 'gaze_0_z', 'gaze_1_y', 'gaze_1_z', 'gaze_angle_x', 'gaze_angle_y', 'gaze_vel', 'gaze_amp', 'gaze_acc']
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'ED', 'MD']
+================================================================================
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 9427 | Val Windows: 2604
+   [feature_minus_gaze_1_x] Acc: 0.7707, BAcc: 0.7707, Prec: 0.7937, Rec: 0.7707, F1: 0.7737, Spec: 0.8854, AUC: 0.9238
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9714 | Val Windows: 2317
+   [feature_minus_gaze_1_x] Acc: 0.7053, BAcc: 0.7053, Prec: 0.7436, Rec: 0.7053, F1: 0.6979, Spec: 0.8526, AUC: 0.9198
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9679 | Val Windows: 2352
+   [feature_minus_gaze_1_x] Acc: 0.7925, BAcc: 0.7925, Prec: 0.8237, Rec: 0.7925, F1: 0.7913, Spec: 0.8962, AUC: 0.9496
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9636 | Val Windows: 2395
+   [feature_minus_gaze_1_x] Acc: 0.7518, BAcc: 0.7518, Prec: 0.7725, Rec: 0.7518, F1: 0.7464, Spec: 0.8759, AUC: 0.9132
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9668 | Val Windows: 2363
+   [feature_minus_gaze_1_x] Acc: 0.7919, BAcc: 0.7919, Prec: 0.8013, Rec: 0.7919, F1: 0.7940, Spec: 0.8960, AUC: 0.9228
+
+================================================================================
+FINAL XGBOOST SUMMARY [3Class_ND_ED_MD | feature_minus_gaze_1_x]
+================================================================================
+[feature_minus_gaze_1_x]
+  ACC : 0.7624 (+/- 0.0323)
+  BACC: 0.7624 (+/- 0.0323)
+  PREC: 0.7870 (+/- 0.0272)
+  REC : 0.7624 (+/- 0.0323)
+  F1  : 0.7607 (+/- 0.0357)
+  SPEC: 0.8812 (+/- 0.0162)
+  AUC : 0.9258 (+/- 0.0124)

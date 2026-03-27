@@ -1,0 +1,46 @@
+Experiment Start: 3Class_ND_ED_MD
+Ablation: feature_minus_AU45_r
+Selected Groups: ['AU', 'POSE', 'VEHICLE', 'GAZE']
+Removed Groups: []
+Selected Features (38): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz', 'Speed', 'Acceleration', 'Brake', 'Steering', 'LaneOffset', 'gaze_0_x', 'gaze_0_y', 'gaze_0_z', 'gaze_1_x', 'gaze_1_y', 'gaze_1_z', 'gaze_angle_x', 'gaze_angle_y', 'gaze_vel', 'gaze_amp', 'gaze_acc']
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes: ['ND', 'ED', 'MD']
+================================================================================
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 9427 | Val Windows: 2604
+   [feature_minus_AU45_r] Acc: 0.7325, BAcc: 0.7325, Prec: 0.7647, Rec: 0.7325, F1: 0.7357, Spec: 0.8662, AUC: 0.9054
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9714 | Val Windows: 2317
+   [feature_minus_AU45_r] Acc: 0.7106, BAcc: 0.7106, Prec: 0.7362, Rec: 0.7106, F1: 0.6991, Spec: 0.8553, AUC: 0.8988
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9679 | Val Windows: 2352
+   [feature_minus_AU45_r] Acc: 0.7621, BAcc: 0.7621, Prec: 0.7980, Rec: 0.7621, F1: 0.7611, Spec: 0.8810, AUC: 0.9405
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9636 | Val Windows: 2395
+   [feature_minus_AU45_r] Acc: 0.7222, BAcc: 0.7222, Prec: 0.7489, Rec: 0.7222, F1: 0.7184, Spec: 0.8611, AUC: 0.9078
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 9668 | Val Windows: 2363
+   [feature_minus_AU45_r] Acc: 0.7742, BAcc: 0.7742, Prec: 0.7858, Rec: 0.7742, F1: 0.7760, Spec: 0.8871, AUC: 0.9152
+
+================================================================================
+FINAL XGBOOST SUMMARY [3Class_ND_ED_MD | feature_minus_AU45_r]
+================================================================================
+[feature_minus_AU45_r]
+  ACC : 0.7403 (+/- 0.0240)
+  BACC: 0.7403 (+/- 0.0240)
+  PREC: 0.7667 (+/- 0.0228)
+  REC : 0.7403 (+/- 0.0240)
+  F1  : 0.7381 (+/- 0.0278)
+  SPEC: 0.8702 (+/- 0.0120)
+  AUC : 0.9135 (+/- 0.0144)

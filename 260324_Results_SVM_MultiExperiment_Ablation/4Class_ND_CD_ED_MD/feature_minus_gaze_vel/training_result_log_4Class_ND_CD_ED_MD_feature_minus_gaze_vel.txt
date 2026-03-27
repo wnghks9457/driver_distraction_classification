@@ -1,0 +1,69 @@
+Experiment Start: 4Class_ND_CD_ED_MD
+Ablation        : feature_minus_gaze_vel
+Model           : SVM
+Split Method    : File-Based StratifiedKFold (Leakage Free)
+Train Balancing : In-Fold Undersampling
+Classes         : ['ND', 'CD', 'ED', 'MD']
+Target Map      : {0: 0, 1: 1, 2: 2, 3: 3}
+Selected Groups : ['AU', 'POSE', 'VEHICLE', 'GAZE']
+Selected Features (38): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz', 'Speed', 'Acceleration', 'Brake', 'Steering', 'LaneOffset', 'gaze_0_x', 'gaze_0_y', 'gaze_0_z', 'gaze_1_x', 'gaze_1_y', 'gaze_1_z', 'gaze_angle_x', 'gaze_angle_y', 'gaze_amp', 'gaze_acc']
+SVM Params      : {'kernel': 'rbf', 'C': 0.1, 'gamma': 0.001, 'probability': True, 'random_state': 42, 'cache_size': 500}
+================================================================================
+Filtered File Distribution: {'CD': 33, 'ED': 27, 'MD': 31}
+
+--- Fold 1/5 ---
+Train Files Count: 72 | Val Files Count: 19
+Train Windows: 11083 | Val Windows: 3056
+Train Raw Distribution: {'ND': 6556, 'CD': 1656, 'ED': 1376, 'MD': 1495}
+Val Raw Distribution  : {'ND': 1852, 'CD': 452, 'ED': 314, 'MD': 438}
+Train Balanced Distribution: {'ND': 1376, 'CD': 1376, 'ED': 1376, 'MD': 1376}
+Val Balanced Distribution  : {'ND': 314, 'CD': 314, 'ED': 314, 'MD': 314}
+   [feature_minus_gaze_vel] Acc: 0.5518, BAcc: 0.5518, Prec: 0.5441, Rec: 0.5518, F1: 0.5454, Spec: 0.8506, AUC: 0.8031
+
+--- Fold 2/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11387 | Val Windows: 2752
+Train Raw Distribution: {'ND': 6795, 'CD': 1673, 'ED': 1379, 'MD': 1540}
+Val Raw Distribution  : {'ND': 1613, 'CD': 435, 'ED': 311, 'MD': 393}
+Train Balanced Distribution: {'ND': 1379, 'CD': 1379, 'ED': 1379, 'MD': 1379}
+Val Balanced Distribution  : {'ND': 311, 'CD': 311, 'ED': 311, 'MD': 311}
+   [feature_minus_gaze_vel] Acc: 0.5667, BAcc: 0.5667, Prec: 0.5356, Rec: 0.5667, F1: 0.5442, Spec: 0.8556, AUC: 0.8102
+
+--- Fold 3/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11338 | Val Windows: 2801
+Train Raw Distribution: {'ND': 6766, 'CD': 1659, 'ED': 1372, 'MD': 1541}
+Val Raw Distribution  : {'ND': 1642, 'CD': 449, 'ED': 318, 'MD': 392}
+Train Balanced Distribution: {'ND': 1372, 'CD': 1372, 'ED': 1372, 'MD': 1372}
+Val Balanced Distribution  : {'ND': 318, 'CD': 318, 'ED': 318, 'MD': 318}
+   [feature_minus_gaze_vel] Acc: 0.5566, BAcc: 0.5566, Prec: 0.5462, Rec: 0.5566, F1: 0.5435, Spec: 0.8522, AUC: 0.8206
+
+--- Fold 4/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11357 | Val Windows: 2782
+Train Raw Distribution: {'ND': 6758, 'CD': 1721, 'ED': 1317, 'MD': 1561}
+Val Raw Distribution  : {'ND': 1650, 'CD': 387, 'ED': 373, 'MD': 372}
+Train Balanced Distribution: {'ND': 1317, 'CD': 1317, 'ED': 1317, 'MD': 1317}
+Val Balanced Distribution  : {'ND': 372, 'CD': 372, 'ED': 372, 'MD': 372}
+   [feature_minus_gaze_vel] Acc: 0.5558, BAcc: 0.5558, Prec: 0.5476, Rec: 0.5558, F1: 0.5480, Spec: 0.8519, AUC: 0.8237
+
+--- Fold 5/5 ---
+Train Files Count: 73 | Val Files Count: 18
+Train Windows: 11391 | Val Windows: 2748
+Train Raw Distribution: {'ND': 6757, 'CD': 1723, 'ED': 1316, 'MD': 1595}
+Val Raw Distribution  : {'ND': 1651, 'CD': 385, 'ED': 374, 'MD': 338}
+Train Balanced Distribution: {'ND': 1316, 'CD': 1316, 'ED': 1316, 'MD': 1316}
+Val Balanced Distribution  : {'ND': 338, 'CD': 338, 'ED': 338, 'MD': 338}
+   [feature_minus_gaze_vel] Acc: 0.5414, BAcc: 0.5414, Prec: 0.5348, Rec: 0.5414, F1: 0.5377, Spec: 0.8471, AUC: 0.7910
+
+================================================================================
+FINAL SVM SUMMARY [4Class_ND_CD_ED_MD | feature_minus_gaze_vel]
+================================================================================
+[feature_minus_gaze_vel]
+  ACC : 0.5545 (+/- 0.0082)
+  BACC: 0.5545 (+/- 0.0082)
+  PREC: 0.5417 (+/- 0.0054)
+  REC : 0.5545 (+/- 0.0082)
+  F1  : 0.5438 (+/- 0.0034)
+  SPEC: 0.8515 (+/- 0.0027)
+  AUC : 0.8097 (+/- 0.0119)

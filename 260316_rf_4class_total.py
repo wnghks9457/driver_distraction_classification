@@ -60,38 +60,38 @@ class Config:
     }
 
     EXPERIMENTS = {
-        '2Class_ND_CD': {
-            'TARGET_LABELS_MAP': {0: 0, 1: 1},
-            'CLASS_NAMES': ['ND', 'CD']
-        },
-        '2Class_ND_ED': {
-            'TARGET_LABELS_MAP': {0: 0, 2: 1},
-            'CLASS_NAMES': ['ND', 'ED']
-        },
-        '2Class_ND_MD': {
-            'TARGET_LABELS_MAP': {0: 0, 3: 1},
-            'CLASS_NAMES': ['ND', 'MD']
-        },
-        '2Class_ND_CDED': {
-            'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 1},
-            'CLASS_NAMES': ['ND', 'CDED']
-        },
-        '2Class_ND_CDEDMD': {
-            'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 1, 3: 1},
-            'CLASS_NAMES': ['ND', 'CDEDMD']
-        },
-        '3Class_ND_CD_ED': {
-            'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 2},
-            'CLASS_NAMES': ['ND', 'CD', 'ED']
-         },
+        # '2Class_ND_CD': {
+        #     'TARGET_LABELS_MAP': {0: 0, 1: 1},
+        #     'CLASS_NAMES': ['ND', 'CD']
+        # },
+        # '2Class_ND_ED': {
+        #     'TARGET_LABELS_MAP': {0: 0, 2: 1},
+        #     'CLASS_NAMES': ['ND', 'ED']
+        # },
+        # '2Class_ND_MD': {
+        #     'TARGET_LABELS_MAP': {0: 0, 3: 1},
+        #     'CLASS_NAMES': ['ND', 'MD']
+        # },
+        # '2Class_ND_CDED': {
+        #     'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 1},
+        #     'CLASS_NAMES': ['ND', 'CDED']
+        # },
+        # '2Class_ND_CDEDMD': {
+        #     'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 1, 3: 1},
+        #     'CLASS_NAMES': ['ND', 'CDEDMD']
+        # },
+        # '3Class_ND_CD_ED': {
+        #     'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 2},
+        #     'CLASS_NAMES': ['ND', 'CD', 'ED']
+        #  },
          '3Class_ND_ED_MD': {
             'TARGET_LABELS_MAP': {0: 0, 2: 1, 3: 2},
             'CLASS_NAMES': ['ND', 'ED', 'MD']
         },
-        '3Class_CD_ED_MD': {
-            'TARGET_LABELS_MAP': {1: 0, 2: 1, 3: 2},
-            'CLASS_NAMES': ['CD', 'ED', 'MD']
-        },
+        # '3Class_CD_ED_MD': {
+        #     'TARGET_LABELS_MAP': {1: 0, 2: 1, 3: 2},
+        #     'CLASS_NAMES': ['CD', 'ED', 'MD']
+        # },
         '3Class_ND_CDED_MD': {
             'TARGET_LABELS_MAP': {0: 0, 1: 1, 2: 1, 3: 2},
             'CLASS_NAMES': ['ND', 'CDED', 'MD']

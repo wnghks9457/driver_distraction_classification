@@ -1,0 +1,21 @@
+Experiment Start: 4Class_ND_CD_ED_MD
+Classes: ['ND', 'CD', 'ED', 'MD']
+Ablation: baseline_all_features
+Selected Groups: ['AU', 'POSE', 'VEHICLE', 'GAZE']
+Selected Features (39): ['AU01_r', 'AU02_r', 'AU04_r', 'AU05_r', 'AU06_r', 'AU07_r', 'AU09_r', 'AU10_r', 'AU12_r', 'AU14_r', 'AU15_r', 'AU17_r', 'AU20_r', 'AU23_r', 'AU25_r', 'AU26_r', 'AU45_r', 'pose_Tx', 'pose_Ty', 'pose_Tz', 'pose_Rx', 'pose_Ry', 'pose_Rz', 'Speed', 'Acceleration', 'Brake', 'Steering', 'LaneOffset', 'gaze_0_x', 'gaze_0_y', 'gaze_0_z', 'gaze_1_x', 'gaze_1_y', 'gaze_1_z', 'gaze_angle_x', 'gaze_angle_y', 'gaze_vel', 'gaze_amp', 'gaze_acc']
+==================================================
+ [Result Fold 1] Acc: 0.7081, Prec: 0.7175, Rec: 0.7087, F1: 0.7084, Spec: 0.9026, AUC: 0.9056
+ [Result Fold 2] Acc: 0.6337, Prec: 0.6506, Rec: 0.6328, F1: 0.6359, Spec: 0.8780, AUC: 0.8749
+ [Result Fold 3] Acc: 0.6300, Prec: 0.6400, Rec: 0.6300, F1: 0.6328, Spec: 0.8767, AUC: 0.8446
+ [Result Fold 4] Acc: 0.4625, Prec: 0.4356, Rec: 0.4617, F1: 0.4396, Spec: 0.8208, AUC: 0.7644
+ [Result Fold 5] Acc: 0.5865, Prec: 0.5857, Rec: 0.5861, F1: 0.5802, Spec: 0.8621, AUC: 0.8286
+
+==================================================
+Final 5-Fold Average Performance (['ND', 'CD', 'ED', 'MD'])
+==================================================
+ACC         : 0.6041 (+/- 0.0809)
+PREC        : 0.6059 (+/- 0.0949)
+REC         : 0.6038 (+/- 0.0813)
+F1          : 0.5994 (+/- 0.0897)
+SPEC        : 0.8680 (+/- 0.0270)
+AUC         : 0.8436 (+/- 0.0476)
